@@ -1,3 +1,3 @@
 :HL["/_next/static/chunks/2nrrmvgy-zb6b.css","style"]
 1:[["children",{"s":"__PAGE__","h":160}]]
-0:{"b":"5u1oHO6IW2hJyNK_VgfgU","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"z1a1Lnnv477B7kqo8jRzy","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
