@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arena One — 3D FPS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="game-root">
+      <canvas id="game-canvas"></canvas>
+
+      <div id="crosshair" hidden></div>
+
+      <div id="hud" hidden>
+        <div class="hud-panel hud-player">
+          <span class="hud-label">You</span>
+          <div class="bar">
+            <div id="player-health" class="bar-fill"></div>
+          </div>
+        </div>
+        <div class="hud-panel hud-enemy">
+          <span class="hud-label">Opponent</span>
+          <div class="bar">
+            <div id="enemy-health" class="bar-fill enemy"></div>
+          </div>
+        </div>
+        <p class="hud-hint">↑ ↓ move · ← → turn · Space shoot</p>
+      </div>
+
+      <section id="start-screen" class="overlay">
+        <div class="card">
+          <p class="kicker">1v1 arena</p>
+          <h1>Arena One</h1>
+          <p class="lead">
+            First-person duel against a single computer opponent. Clear the
+            arena before they take you down.
+          </p>
+          <ul class="controls">
+            <li><kbd>↑</kbd> / <kbd>↓</kbd> Forward / back</li>
+            <li><kbd>←</kbd> / <kbd>→</kbd> Turn</li>
+            <li><kbd>Space</kbd> Shoot</li>
+          </ul>
+          <button type="button" id="start-btn">Enter arena</button>
+        </div>
+      </section>
+
+      <section id="end-screen" class="overlay" hidden aria-hidden="true">
+        <div class="card">
+          <p class="kicker" id="end-kicker">Match over</p>
+          <h1 id="end-title">Victory</h1>
+          <p class="lead" id="end-copy">The opponent is down.</p>
+          <button type="button" id="restart-btn">Play again</button>
+        </div>
+      </section>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="js/game.js"></script>
+  </body>
+</html>
